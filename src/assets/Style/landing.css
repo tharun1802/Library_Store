@@ -1,0 +1,125 @@
+.Landing{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/12/50/bookcases-1869616_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.Landing .container{
+    height: 70vh;
+    width: 30vw;
+    border: solid 1px black;
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Landing .btn-box{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 80%;
+    margin: 5vh auto 2vh;
+    border-radius: 5px;
+    border: solid 0.1px rgba(255, 255, 255, 0.3);
+    justify-content: flex-start;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+.Landing .btn-box button{
+    border: solid 1px rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.49);
+    color:whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.Landing .Admin-btn{
+    margin-left:0%;
+}
+
+.Landing .User-btn{
+    margin: 50%;
+}
+
+.Landing .form-box{
+    border: solid 0.1px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    width: 80%;
+    margin: auto;
+
+}
+
+.Landing input,#Login-btn{
+    display: block;
+    margin: 2vh auto;
+    min-height: 6vh;
+}
+
+.Landing input{
+    width: 80%;
+}
+
+.Landing input::placeholder{
+    padding-left: 10px;
+}
+
+.Landing #Login-btn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+}
+
+.Landing #Login-btn:active{
+    transform: scale(0.9);
+
+}
+
+.Landing h4{
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 2vh;
+}
+
+.Landing .forgetten{
+    font-size: small;
+    border: solid 0.1px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 30%;
+    margin: 2vh auto;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 5px;
+}
+
+.Landing .forgetten a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.Landing .forgetten:active{
+    transform: scale(0.9);
+}

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.adduser{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 1px 1px 5px black;
+    padding: 30px;
+    width: 70%;
+    height: 85vh;
+    margin: 100px auto;
+    background-image: url("https://media.istockphoto.com/id/1367252766/photo/woman-at-home-checking-her-bank-statements-online.jpg?s=2048x2048&w=is&k=20&c=_hnMmF7xGMMt6S1WoAvXlvCJ34Q4NJecLyq1Lxr3IV8=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.adduser h1{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+.adduser .form-user{
+    border: none;
+    display: grid;
+    width: 80%;
+    margin: 30px auto;
+    grid-template-columns: 1fr;
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.adduser .form-user form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    margin: 10px;
+    padding: 10px;
+    height: 50vh;
+}
+
+.adduser .form-user form input{
+    height: 50%;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.adduser .form-user button{
+    display: block;
+    margin: 20px auto;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,154 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.play{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.play video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.7;
+    filter: blur(5px);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.book{
+    border:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px 5px;
+    margin-top: 69px;
+    height: 90vh;
+    overflow: auto;
+}
+
+.container2{
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    box-shadow: 1px 1px 5px black;
+    max-width: 600px;
+    background-color: white;
+    margin: 30px auto;
+
+}
+
+.con{
+    height: 100%;
+    width: 100%;
+}
+
+.image-box{
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.image-box img{
+    display: block;
+    margin: 0px auto;
+    height: 200px;
+    width: 150px;
+    border: solid 1px black;
+    box-shadow: 1px 1px 2px black;
+}
+
+.image-box h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image{
+    border:none;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+
+.table-box{
+    border: solid 1px black;
+    background-color: #fffbe6;
+    width: 100%;
+    height: auto;
+}
+
+.table-box table{
+   width: 100%;
+   height: 80%;
+   border-collapse: collapse ;
+}
+
+.table-box table th{
+    padding: 10px;
+}
+
+.image-box .btn{
+    border: none;
+    height: 11vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-box .btn button{
+    height: 40%;
+    width: 30%;
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.image-box .btn button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+}
+
+.image-box .btn .del:hover{
+    background-color: rgb(255, 24, 24);
+    color: white;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .book{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container2 {
+        margin: 15px;
+    }
+
+    .image-box img {
+        height: 150px;
+        width: 100px;
+    }
+}
